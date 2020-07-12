@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 style="text-align: center;">Open Console to see the outputs!(Press F12)</h3>
+    <h2>String Methods:</h2>
+    <script>
+        var Name = "Abhishek";
+        console.log("stirng - "+Name);
+        document.write("<br>charAt Returns the character at the specified index (position)");
+        console.log("charAt - "+Name.charAt(4));
+        document.write("<br>includes Checks whether a string contains the specified string/characters");
+        console.log("includes - "+Name.includes('s'));
+        document.write("<br>repeat Returns a new string with a specified number of copies of an existing string");
+        console.log("repeat - "+Name.repeat(4));
+        document.write("<br>toLowerCase Converts a string to lowercase letters");
+        console.log("toLowerCase - "+Name.toLowerCase());
+        document.write("<br>toUpperCase Converts a string to uppercase letters");
+        console.log("toUpperCase - "+Name.toUpperCase());
+        document.write("<br>replace Searches a string for a specified value, or a regular expression, and returns a new string where the specified values are replaced");
+        console.log("replace - "+Name.replace('k','p'));
+        document.write("<br>startsWith Checks whether a string begins with specified characters");
+        console.log("startsWith - "+Name.startsWith('A'));
+        document.write("<br>slice Extracts a part of a string and returns a new string");
+        console.log("slice - "+Name.slice(2,5));
+        document.write("<br>search Searches a string for a specified value, or regular expression, and returns the position of the match");
+        console.log("search - "+Name.search('s'));
+    </script>
+    <h2>Array Methods:</h2>
+    <script>
+        var bikes = ['Panigale','S1000RR','Hayabusa','H2R'];
+        var bikes2 = ['Apache','R1'];
+        console.log(bikes);
+        console.log("join - "+bikes.join('|'));
+        document.write("<br>The join() method also joins all array elements into a string");
+        console.log("pop - "+bikes.pop());
+        document.write("<br>The pop() method removes the last element from an array");
+        bikes.push('ZX10R');
+        console.log("after push - "+bikes);
+        document.write("<br>The push() method adds a new element to an array (at the end)")
+        bikes.shift();
+        console.log("after shift - "+bikes);
+        document.write("<br>Shifting is equivalent to popping, working on the first element instead of the last. <br>The shift() method removes the first array element and shifts all other elements to a lower index.");
+        bikes.unshift("Norton");
+        console.log("after unshift - "+bikes);
+        document.write("<br>The unshift() method adds a new element to an array (at the beginning), and unshifts older elements");
+        console.log("indexes - "+bikes[1]);
+        document.write("<br>Array elements are accessed using their index number<br>Array indexes start with 0. [0] is the first array element, [1] is the second, [2] is the third and so on");
+        console.log("concat - "+bikes.concat(bikes2));
+        document.write("<br>The concat() method creates a new array by merging (concatenating) existing arrays")
+        console.log("slice - "+bikes.slice(3));
+        console.log(bikes);
+        document.write("<br>The slice() method slices out a piece of an array into a new array");
+    </script>
+</body>
+</html>
