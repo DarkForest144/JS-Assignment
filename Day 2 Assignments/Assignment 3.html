@@ -4,19 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <h1>Assignment 3</h1>
+    <h1 style="text-align: center;">Assignment 3</h1>
 </head>
 <body>
     <script>
         var age;
         age = prompt("Please Enter your age.");
-        if (age > 21) 
+        if (age >0)
         {
-            document.write("You can Drink");    
+            if (age > 21) 
+            {
+                document.write("You can Drink");    
+            }
+            else
+            {
+                document.write("You cannot Drink");
+            }
         }
         else
         {
-            document.write("You cannot Drink");
+            document.write("Please Enter a valid age!!!");
         }
     </script>
 </body>
