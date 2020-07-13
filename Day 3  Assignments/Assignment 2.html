@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <h1 style="text-align: center;">Assignment 2</h1>
+        <h2 style="text-align: center;"">Open Console tosee the outputs(Press F12)</h2>
+    </head>
+    <body>
+        <script>
+            var verName = prompt("Enter your OS and version (Eg - Windows 10)","Windows 10");
+            var ips = verName.split(" ");
+            console.log(ips);
+            function fun(OSName,vName)
+            {
+                console.log("Your OS Name is "+OSName+" & Version is "+vName);
+            }
+            fun(ips[0],ips[1]);
+        </script>
+    </body>
+</html>

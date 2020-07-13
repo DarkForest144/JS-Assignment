@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1 style="text-align: center;">Assignment 3</h1>
+    <h2 style="text-align: center;">Open Console tosee the outputs(Press F12)</h2>
+</head>
+<body>
+    <script>
+        let marks = +prompt("Enter your marks number (between 1-100)");
+        console.log("Your marks are - "+marks);
+
+        // Using if / else
+        console.log("*****Using if/else*****");
+        if (marks >= 75 && marks <= 100) 
+        {
+            console.log("Your Grade is A");   
+        }
+        else if (marks >= 50 && marks <= 75)
+        {
+            console.log("Your Grade is B"); 
+        }
+        else if (marks >= 25 && marks <= 50)
+        {
+            console.log("Your Grade is C"); 
+        }
+        else if (marks >= 0 && marks <= 25)
+        {
+            console.log("Your Grade is D"); 
+        }
+        else 
+        {
+            console.log("Please enter valid marks!!!");    
+        }
+
+        // Using Switch case
+        let A = [];
+        let B = [];
+        let C = [];
+        let D = [];
+        for (let i = 75; i <= 100; i++) 
+        {
+            A.push(i);
+        }
+        for (let i = 50; i <= 75; i++) 
+        {
+            B.push(i);
+        }
+        for (let i = 25; i <= 50; i++) 
+        {
+            C.push(i);
+        }
+        for (let i = 0; i <= 25; i++) 
+        {
+            D.push(i);
+        }
+        let a,b,c,d;
+        a = A.includes(marks);
+        b = B.includes(marks);
+        c = C.includes(marks);
+        d = D.includes(marks);
+        console.log("*****Using Switch case******")
+        switch (true)
+        {
+            case a:
+                 console.log("Your Grade is A");
+                break;
+            case b:
+                 console.log("Your Grade is B");
+                break;
+            case c:
+                 console.log("Your Grade is C");
+                break;
+            case d:
+                 console.log("Your Grade is D");
+                break;
+        
+            default:
+                console.log("Please enter valid marks!!!");
+                break;
+        }
+
+        // using ternary operator
+
+        console.log("****Using Ternary operator****");
+        (true == a) ? console.log("Your Grade is A") : (true == b) ? console.log("Your Grade is B") :(true == c) ? console.log("Your Grade is C") :(true == d) ? console.log("Your Grade is D") : console.log("Please enter valid marks!!!");
+        
+    </script>
+</body>
+</html>
