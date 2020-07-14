@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1>
+        Assignment 2
+    </h1>
+</head>
+<body>
+    <script>
+        document.write("var and let are both used for variable declaration in javascript but the difference between them is that var is function scoped and let is block scoped.<br>It can be said that a variable declared with var is defined throughout the program as compared to let.<br>We will take an example here-");
+        var a,b,c;
+        a=2;
+        b=4;
+        c=a+b
+        document.write("<br>",a," + ",b," = ",c);
+        {
+            let a = 8;
+            document.write("<br>Using let inside a block - ",a);
+        }
+        document.write("<br>This is value of a outside block - ",a);
+        document.write("<br>const - ES2015 (ES6) introduced const keyword to define a new variable. The difference in const variable declaration than others is that it cannot be reassigned.");
+        const x = 5;
+        x = 6; // Here we will get an error as const variable cannot be reassigned
+    </script>
+</body>
+</html>
