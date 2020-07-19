@@ -9,21 +9,15 @@
 </head>
 <body>
     <script>
-        for (let i = 1; i <= 100; i++) 
-        {
-            if (i % 3 == 0 && i % 5 == 0)
-            {
-                console.log(`${i} : fizzbuzz `);
-            }
-            else if (i % 3 == 0)
-            {
-                console.log(`${i} : fizz `);
-            }
-            else if (i % 5 == 0)
-            {
-                console.log(`${i} : buzz `);
+        const student = {
+            name: "Helsinki",
+            age: 24,
+            projects: {
+                diceGame: "Two player dice game using JavaScript"
             }
         }
+        const {name, age, projects:{diceGame}} = student;
+        console.log(`Name- ${name} \nage- ${age} \nProject- ${diceGame} `);
     </script>
 </body>
 </html>
