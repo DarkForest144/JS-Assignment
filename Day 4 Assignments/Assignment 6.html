@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h2 style="text-align: center;">Assignment 1</h2>
+</head>
+<body>
+    <script>
+        var num,end = 0;
+        function check(num) 
+        {
+            end = 0;
+            return (num >= 100 || num == 0) ? 1 : 0
+        }
+        
+        do
+        {
+            num = +prompt("Enter a number 100 or greater");
+            end = check(num);
+        }while(end==0)
+        document.write("Ended");
+    </script>
+</body>
+</html>
