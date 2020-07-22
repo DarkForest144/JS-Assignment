@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h2 style="text-align: center;">Assignment 3</h2>
+</head>
+<body>
+    <h2 id="nm" style="text-align: center;"></h2>
+    <h4 id="time" style="text-align: center;"></h4>
+    <div style="text-align: center;">
+        <button id="btn" onclick="cngcolor">Dark Mode ON</button>
+        <button id="btn2" onclick="cngcolor2" hidden = true>Dark Mode OFF</button>
+    </div>
+
+    <script>
+        var name = prompt("Enter your name",'Amomymous');
+        var nam = document.getElementById('nm');
+        nam.innerHTML = (`Welcome ${name}`);
+
+        function tm()
+        {
+            var date = new Date();
+            let time = date.toLocaleTimeString();
+            var tim = document.getElementById('time');
+            tim.innerText = time;
+        }
+        setInterval(tm, 1000);
+
+        var button = document.getElementById('btn');
+        var button2 = document.getElementById('btn2');
+        button.onclick = function cngcolor(){
+            document.body.style.backgroundColor = 'black';
+            document.body.style.color = 'white';
+            button.hidden = true;
+            button2.hidden = false;
+        }
+        button2.onclick = function cngcolor2(){
+            document.body.style.backgroundColor = 'white';
+            document.body.style.color = 'black';
+            button.hidden = false;
+            button2.hidden = true;
+        }
+    
+    </script>
+</body>
+</html>

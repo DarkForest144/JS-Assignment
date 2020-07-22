@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h2 style="text-align: center;">Assignment 1</h2>
+</head>
+<body>
+    <button id="btn" onclick="start()">Click me</button>
+    <script>
+        var arr = ['red','Blue','Yellow','Green'];
+        function changecolor()
+        {
+            setTimeout(function loop() 
+            {
+                document.bgColor = arr.shift();
+                if(arr.length) 
+                {
+                    setTimeout(loop, 5000);
+                }
+            },5000);
+        }
+        function start()
+        {
+            setInterval(changecolor(),20000);
+        }
+        // var button = document.getElementById('btn');
+        // button.onclick = () => {
+        //     start();
+        // }
+    </script>
+</body>
+</html>
